@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up Example</title>
+</head>
+<body>
+
+<button onclick="showInitialPopup()">Click me</button>
+
+<script>
+    function showInitialPopup() {
+        var result = confirm("Dei peh payale, enna pudungura?");
+        if (result) {
+            showNextPopup1();
+        } else {
+            showNextPopup2();
+        }
+    }
+
+    function showNextPopup1() {
+        var result = confirm("vaa saapuda polam");
+        if (result) {
+            alert("enga eppo nu mattum sollu");
+        } else {
+            alert("naan saaptuten da peh");
+        }
+    }
+
+    function showNextPopup2() {
+        var result = confirm("moodikittu vaa da vendru");
+        if (result) {
+            alert("naalaiku povom");
+        } else {
+            alert("vanthu tholaiyuren");
+        }
+    }
+</script>
+
+</body>
+</html>
